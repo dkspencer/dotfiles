@@ -21,3 +21,9 @@ rsync -avu "$HOME/.config/ranger/rc.conf" ".config/ranger/rc.conf"
 
 # update compton
 rsync -avu "$HOME/.config/compton.conf" ".config/compton.conf"
+
+# update firefox
+rsync -avu "$HOME/.mozilla/firefox/naxyk7it.default-release/chrome/userChrome.css" ".mozilla/firefox/naxyk7it.default-release/chrome/userChrome.css"
+
+# update spicetify
+rsync -avu "$HOME/.config/spicetify/config.ini" ".config/spicetify/config.ini"
