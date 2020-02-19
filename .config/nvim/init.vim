@@ -224,7 +224,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-" let g:airline_theme='solarized'
+let g:airline_theme='gruvbox'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 0
@@ -588,10 +588,10 @@ let g:neoformat_basic_format_retab = 1
 let g:neoformat_basic_format_trim = 1
 
 "" Color Scheme
-silent colorscheme flattened_light
-" set background=light
-" let g:gruvbox_contrast_dark="soft"
+silent colorscheme gruvbox
+set background=light
+let g:gruvbox_contrast_soft="soft"
 
-" highlight Normal ctermbg=NONE
+highlight Normal ctermbg=NONE
 "
 " let g:solarized_use16 = 0

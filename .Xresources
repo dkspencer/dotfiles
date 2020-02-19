@@ -6,9 +6,9 @@ Xft.autohint:  false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-*background: #fdf6e3
-*foreground: #073642
-*cursorcolor: #c5c8c6
+*background: #fbf1c7
+*foreground: #3c3836
+*cursorcolor: #af3a03
 
 !*fading:                          8
 !*fadeColor:                       black
@@ -17,36 +17,36 @@ Xft.lcdfilter: lcddefault
 !*pointerColorForeground:          #d65d0e
 
 ! black dark/light
-*color0:                          #073642
-*color8:                          #002b36
+*color0:                          #282828
+*color8:                          #fc3836
 
 ! red dark/light
-*color1:                          #dc322f
-*color9:                          #cb4b16
+*color1:                          #9d0006
+*color9:                          #cc241d
 
 ! green dark/light
-*color2:                          #859900
-*color10:                         #586e75
+*color2:                          #79740e
+*color10:                         #98971a
 
 ! yellow dark/light
-*color3:                          #b58900
-*color11:                         #657b83
+*color3:                          #b57614
+*color11:                         #d79921
 
 ! blue dark/light
-*color4:                          #268bd2
-*color12:                         #839496
+*color4:                          #076678
+*color12:                         #458588
 
 ! magenta dark/light
-*color5:                          #d33682
-*color13:                         #6c71c4
+*color5:                          #8f3f71
+*color13:                         #b16286
 
 ! cyan dark/light
-*color6:                          #d33682
-*color14:                         #93a1a1
+*color6:                          #427b58
+*color14:                         #689d6a
 
 ! white dark/light
-*color7:                          #eee8d5
-*color15:                         #fdf6e3
+*color7:                          #f9f5d7
+*color15:                         #928374
 
 Xcursor.theme: xcursor-breeze
 Xcursor.size:                     0
