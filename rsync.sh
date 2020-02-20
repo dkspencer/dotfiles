@@ -27,3 +27,6 @@ rsync -avu "$HOME/.mozilla/firefox/naxyk7it.default-release/chrome/userChrome.cs
 
 # update spicetify
 rsync -avu "$HOME/.config/spicetify/config.ini" ".config/spicetify/config.ini"
+
+# update rofi
+rsync -avu "/usr/share/rofi/themes/gruvbox.rasi" .

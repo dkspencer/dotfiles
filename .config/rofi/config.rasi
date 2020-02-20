@@ -58,7 +58,7 @@ configuration {
 /*	color-urgent: ;*/
 /*	color-active: ;*/
 /*	color-window: ;*/
-/*	max-history-size: 25;*/
+	max-history-size: 5;
 /*	combi-hide-mode-prefix: false;*/
 /*	matching-negate-char: '-' /* unsupported */;*/
 /*	cache-dir: ;*/
@@ -143,4 +143,4 @@ configuration {
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
-@import "/usr/share/rofi/themes/gruvbox-light-soft.rasi"
+@import "/usr/share/rofi/themes/gruvbox.rasi"
