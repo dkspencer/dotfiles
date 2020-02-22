@@ -30,3 +30,4 @@ rsync -avu "$HOME/.config/spicetify/config.ini" ".config/spicetify/config.ini"
 
 # update rofi
 rsync -avu "/usr/share/rofi/themes/gruvbox.rasi" .
+rsync -avu "$HOME/.config/rofi/" ".config/rofi"
