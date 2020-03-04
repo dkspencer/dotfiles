@@ -34,3 +34,6 @@ rsync -avu "$HOME/.config/rofi/" ".config/rofi"
 
 # update redshift
 rsync -avu "$HOME/.config/redshift.conf" ".config/redshift.conf"
+
+# update vim colors
+rsync -avu "$HOME/.config/nvim/plugged/onedark.vim/colors/onedark.vim" ".config/nvim/plugged/onedark.vim/colors/onedark.vim"
