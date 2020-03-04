@@ -6,8 +6,8 @@ Xft.autohint:  false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-*background: #fbf1c7
-*foreground: #3c3836
+*background: #282828
+*foreground: #fbf1c7
 *cursorcolor: #af3a03
 
 !*fading:                          8
@@ -18,11 +18,11 @@ Xft.lcdfilter: lcddefault
 
 ! black dark/light
 *color0:                          #282828
-*color8:                          #fc3836
+*color8:                          #665c54
 
 ! red dark/light
-*color1:                          #9d0006
-*color9:                          #cc241d
+*color1:                          #665c54
+*color9:                          #665c54
 
 ! green dark/light
 *color2:                          #79740e
@@ -37,8 +37,8 @@ Xft.lcdfilter: lcddefault
 *color12:                         #458588
 
 ! magenta dark/light
-*color5:                          #8f3f71
-*color13:                         #b16286
+*color5:                          #8ec07c
+*color13:                         #8ec07c
 
 ! cyan dark/light
 *color6:                          #427b58
@@ -51,10 +51,10 @@ Xft.lcdfilter: lcddefault
 Xcursor.theme: xcursor-breeze
 Xcursor.size:                     0
 
-*font: xft:Fira Code:style=Regular:size=10,xft:DejaVu Sans Mono:size=10
-*boldFont: xft:Fira Code:style=Regular:size=10,xft:DejaVu Sans Mono:size=10
-*italicFont: xft:Fira Code:style=Regular:size=10,xft:DejaVu Sans Mono:size=10
-*boldItalicFont: xft:Fira Code:style=Regular:size=1,xft:DejaVu Sans Mono:size=10
+*font: xft:Fira Code:style=Regular:size=11,xft:DejaVu Sans Mono:size=11
+*boldFont: xft:Fira Code:style=Regular:size=11,xft:DejaVu Sans Mono:size=11
+*italicFont: xft:Fira Code:style=Regular:size=11,xft:DejaVu Sans Mono:size=11
+*boldItalicFont: xft:Fira Code:style=Regular:size=11,xft:DejaVu Sans Mono:size=11
 *letterSpace: 1
 
 *scrollTtyOutput:      false

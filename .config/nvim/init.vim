@@ -48,7 +48,11 @@ Plug 'sbdchd/neoformat'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'morhetz/gruvbox'
 Plug 'lifepillar/vim-solarized8'
-Plug 'romainl/flattened' 
+Plug 'romainl/flattened'
+Plug 'tomasiser/vim-code-dark'
+Plug 'jaredgorski/fogbell.vim'
+Plug 'fxn/vim-monochrome'
+Plug 'joshdick/onedark.vim'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -224,7 +228,7 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme='gruvbox'
+let g:airline_theme='onedark'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 0
@@ -588,9 +592,10 @@ let g:neoformat_basic_format_retab = 1
 let g:neoformat_basic_format_trim = 1
 
 "" Color Scheme
-silent colorscheme gruvbox
-set background=light
-let g:gruvbox_contrast_soft="soft"
+let g:monochrome_italic_comments = 1
+silent colorscheme onedark
+" set background=light
+" let g:gruvbox_contrast_soft="soft"
 
 highlight Normal ctermbg=NONE
 "
