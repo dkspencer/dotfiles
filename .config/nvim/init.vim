@@ -53,6 +53,7 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'jaredgorski/fogbell.vim'
 Plug 'fxn/vim-monochrome'
 Plug 'joshdick/onedark.vim'
+Plug 'artur-shaik/vim-javacomplete2'
 
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -80,6 +81,9 @@ Plug 'tomasr/molokai'
 "" AutoComplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
+
+"" Disable default java autocomplete2 keybinds
+let g:JavaComplete_EnableDefaultMappings = 0
 
 let g:deoplete#enable_at_startup = 1
 
@@ -173,14 +177,14 @@ let g:session_command_aliases = 1
 "*****************************************************************************
 syntax on
 set ruler
-set number
+" set number
 
 let no_buffers_menu=1
 
 set mousemodel=popup
 set t_Co=256
 set guioptions=egmrti
-set gfn=Monospace\ 10
+set gfn=Monospace\ 12
 
 if has("gui_running")
   if has("gui_mac") || has("gui_macvim")
@@ -228,16 +232,16 @@ if exists("*fugitive#statusline")
 endif
 
 " vim-airline
-let g:airline_theme='onedark'
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#ale#enabled = 1
+let g:airline_theme='gruvbox'
+let g:airline#extensions#branch#enabled = 0
+let g:airline#extensions#ale#enabled = 0
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tagbar#enabled = 0
 let g:airline_skip_empty_sections = 1
 
 " numbers
-silent set nonumber
-" silent set number
+" silent set nonumber
+silent set number
 
 "*****************************************************************************
 "" Abbreviations
@@ -329,8 +333,8 @@ set autoread
 "*****************************************************************************
 
 "" Split
-noremap <silent> <S-Right> :vsplit<CR>
-noremap <silent> <S-Up> :split<CR>
+" noremap <silent> <S-Right> :vsplit<CR>
+" noremap <silent> <S-Up> :split<CR>
 " noremap <C-Left> <C-l>
 " noremap <C-Right> <C-h>
 
@@ -542,21 +546,22 @@ endif
 
 if !exists('g:airline_powerline_fonts')
   let g:airline#extensions#tabline#left_sep = ' '
-  let g:airline#extensions#tabline#left_alt_sep = '|'
-  let g:airline_left_sep          = '▶'
-  let g:airline_left_alt_sep      = '»'
-  let g:airline_right_sep         = '◀'
-  let g:airline_right_alt_sep     = '«'
-  let g:airline#extensions#branch#prefix     = '➔' ", ➥, ⎇
+  let g:airline#extensions#tabline#left_alt_sep = ''
+  let g:airline_left_sep          = ''
+  let g:airline_left_alt_sep      = ''
+  let g:airline_right_sep         = ''
+  let g:airline_right_alt_sep     = ''
+  let g:airline#extensions#branch#prefix     = ''
   let g:airline#extensions#readonly#symbol   = '⊘'
   let g:airline#extensions#linecolumn#prefix = '¶'
   let g:airline#extensions#paste#symbol      = 'ρ'
-  let g:airline_symbols.linenr    = 'ln'
-  let g:airline_symbols.branch    = '➔'
+  let g:airline_symbols.linenr    = 'Ξ'
+  let g:airline_symbols.branch    = ''
   let g:airline_symbols.paste     = 'ρ'
-  let g:airline_symbols.paste     = 'Þ'
-  let g:airline_symbols.paste     = '∥'
-  let g:airline_symbols.whitespace = 'Ξ'
+  " let g:airline_symbols.paste     = 'Þ'
+  " let g:airline_symbols.paste     = '∥'
+  let g:airline_symbols.whitespace = 'Ӿ'
+  let g:airline_symbols.maxlinenr      = ''
 else
   let g:airline#extensions#tabline#left_sep = ' '
   let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -568,7 +573,7 @@ else
   let g:airline_right_alt_sep = '«'
   let g:airline_symbols.branch = '➔'
   let g:airline_symbols.readonly = '⊘'
-  let g:airline_symbols.linenr = 'ln'
+  let g:airline_symbols.linenr = ''
 endif
 
 " autocmd VimEnter * NERDTree
@@ -593,10 +598,17 @@ let g:neoformat_basic_format_trim = 1
 
 "" Color Scheme
 let g:monochrome_italic_comments = 1
-silent colorscheme onedark
-" set background=light
-" let g:gruvbox_contrast_soft="soft"
+silent colorscheme gruvbox
+set background=dark
+let g:gruvbox_contrast_soft="soft"
 
-highlight Normal ctermbg=NONE
+" highlight Normal ctermbg=NONE
 "
 " let g:solarized_use16 = 0
+
+"*****************************************************************************
+"" Java configuration
+"*****************************************************************************
+
+"" Indentation
+set autoindent
