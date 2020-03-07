@@ -51,8 +51,8 @@ Xft.lcdfilter: lcddefault
 Xcursor.theme: xcursor-breeze
 Xcursor.size:                     0
 
-*font: xft:Fira Code:style=Regular:size=11,xft:DejaVu Sans Mono:size=11
-*boldFont: xft:Fira Code:style=Regular:size=11,xft:DejaVu Sans Mono:size=11
+*font: xft:Fira Code Medium:style=Medium:size=11,xft:DejaVu Sans Mono:size=11
+*boldFont: xft:Fira Code:style=Bold:size=11,xft:DejaVu Sans Mono:size=11
 *italicFont: xft:Fira Code:style=Regular:size=11,xft:DejaVu Sans Mono:size=11
 *boldItalicFont: xft:Fira Code:style=Regular:size=11,xft:DejaVu Sans Mono:size=11
 *letterSpace: 1
