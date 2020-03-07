@@ -6,6 +6,7 @@ Dotfiles for my Manjaro Linux setup using the Gruvbox theme.
 <!--ts-->
    * [Screenshots](#screenshots)
    * [Applications](#applications)
+   * [ToDo](#todo)
 <!--te-->
 
 ## Screenshots
@@ -27,3 +28,11 @@ Dotfiles for my Manjaro Linux setup using the Gruvbox theme.
 - `zsh`: Shell
 - `ranger`: File explorer
 - `rofi`: Application launcher
+
+## ToDo
+- Clean up files for unused code
+- Create script for switching between audio devices
+- Configure power management
+- Further customize the GTK theme
+- Create an install script
+- Rework rsync
