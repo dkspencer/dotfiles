@@ -3,12 +3,12 @@ html#main-window {
 	--toolbar-bgcolor: var(--color-bg) !important;
 
 	--gap-between-tabs: 5px;
-	--margin-after-tab-list: 8x;
+	--margin-after-tab-list: 8px;
 	--margin-before-tab-list: 8px;
 	--tab-font: "Fira Code", sans-serif;
 	--tab-font-weight: 400;
 	--tab-height: 32px;
-	--tabs-container-height: 140px;
+	--tabs-container-height: 90px;
 
 	--urlbar-container-margin: 5px;
 	--urlbar-list-width: 60%;
