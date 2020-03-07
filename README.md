@@ -1,11 +1,11 @@
 # i3 .files
 
-Dotfiles for my Manjaro Linux setup.
+Dotfiles for my Manjaro Linux setup using the Gruvbox theme.
 
 ## Table of contents
 <!--ts-->
    * [Screenshots](#screenshots)
-   * [Packages](#packages)
+   * [Applications](#applications)
 <!--te-->
 
 ## Screenshots
@@ -17,3 +17,13 @@ Dotfiles for my Manjaro Linux setup.
 
 ### Spotify
 ![Screenshot](/screenshots/spotify.jpg)
+
+## Applications
+- `firefox`: Web browser
+- `neovim`: Text editor
+- `i3`: Window manager
+- `polybar`: Status bar
+- `urxvt`: Terminal
+- `zsh`: Shell
+- `ranger`: File explorer
+- `rofi`: Application launcher
