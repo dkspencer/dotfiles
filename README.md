@@ -35,4 +35,4 @@ Dotfiles for my Manjaro Linux setup using the Gruvbox theme.
 - Configure power management
 - Further customize the GTK theme
 - Create an install script
-- Rework rsync
+- ~~Rework rsync~~
