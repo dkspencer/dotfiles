@@ -1,39 +1,26 @@
-# update i3
-rsync -avu --delete "$HOME/.i3/" ".i3"
+# Settings used:
+# -a: archive
+# -u: update files if changes are detected
+# -q: quiet - only show errors
 
-# update rofi
-rsync -avu "$HOME/.config/rofi/" ".config/rofi/"
+randomName=(".i3/" ".config/rofi" ".zshrc" ".Xresources" ".config/nvim/init.vim" ".config/polybar/" ".config/ranger/rc.conf" ".config/compton.conf" ".config/spicetify/config.ini" ".config/rofi/" ".mozilla/firefox/naxyk7it.default-release/chrome/")
 
-# update zsh
-rsync -avu "$HOME/.zshrc" .
+# Loop through the above and sync with repo
+for file in ${randomName[@]}; do
+    localFilePath=$HOME/$file
 
-# update xresources
-rsync -avu "$HOME/.Xresources" .
+    # Check if directory exists
+    if [ -d $localFilePath ]; then
+        if [ ! -d $file ]; then
+            mkdir -p $file
+        fi
+    fi
 
-# update nvim
-rsync -avu "$HOME/.config/nvim/init.vim" ".config/nvim/init.vim"
+    # Perform the sync
+    if rsync -auq $localFilePath $file; then
+        echo "Successfully copied across: " $file
+    else
+        echo "Something went wrong: " $file
+    fi
 
-# update polybar
-rsync -avu "$HOME/.config/polybar/" ".config/polybar/"
-
-# update ranger
-rsync -avu "$HOME/.config/ranger/rc.conf" ".config/ranger/rc.conf"
-
-# update compton
-rsync -avu "$HOME/.config/compton.conf" ".config/compton.conf"
-
-# update firefox
-rsync -avu "$HOME/.mozilla/firefox/naxyk7it.default-release/chrome/userChrome.css" "chrome/userChrome.css"
-
-# update spicetify
-rsync -avu "$HOME/.config/spicetify/config.ini" ".config/spicetify/config.ini"
-
-# update rofi
-rsync -avu "/usr/share/rofi/themes/gruvbox.rasi" .
-rsync -avu "$HOME/.config/rofi/" ".config/rofi"
-
-# update redshift
-rsync -avu "$HOME/.config/redshift.conf" ".config/redshift.conf"
-
-# update vim colors
-rsync -avu "$HOME/.config/nvim/plugged/onedark.vim/colors/onedark.vim" ".config/nvim/plugged/onedark.vim/colors/onedark.vim"
+done
