@@ -3,7 +3,7 @@
 # -u: update files if changes are detected
 # -q: quiet - only show errors
 
-randomName=(".i3/" ".config/rofi" ".zshrc" ".Xresources" ".config/nvim/init.vim" ".config/polybar/" ".config/ranger/rc.conf" ".config/compton.conf" ".config/spicetify/config.ini" ".config/rofi/" ".mozilla/firefox/naxyk7it.default-release/chrome/")
+randomName=(".i3/" ".config/rofi/" ".zshrc" ".Xresources" ".config/nvim/init.vim" ".config/polybar/" ".config/ranger/rc.conf" ".config/compton.conf" ".config/spicetify/config.ini" ".mozilla/firefox/naxyk7it.default-release/chrome/")
 
 # Loop through the above and sync with repo
 for file in ${randomName[@]}; do
