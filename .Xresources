@@ -57,6 +57,11 @@ Xcursor.size:                     0
 *boldItalicFont: xft:Fira Code:style=Regular:size=11,xft:DejaVu Sans Mono:size=11
 *letterSpace: 1
 
+! *font: xft:DejaVu Sans Mono:size=11
+! *boldFont: xft:DejaVu Sans Mono:size=11
+! *italicFont: xft:DejaVu Sans Mono:size=11
+! *boldItalicFont: xft:DejaVu Sans Mono:size=11
+
 *scrollTtyOutput:      false
 *scrollWithBuffer:     true
 *scrollTtyKeypress:    true
