@@ -11,7 +11,7 @@ Dotfiles for my Manjaro Linux setup using the Gruvbox theme.
 
 ## Screenshots
 ### Desktop - Blank
-![Screenshot](/screenshots/desktop.jpg-27.03.20)
+![Screenshot](/screenshots/desktop-27.03.20.jpg)
 
 ### Firefox
 ![Screenshot](/screenshots/firefox-27.03.20.jpg)
