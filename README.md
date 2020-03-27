@@ -17,10 +17,10 @@ Dotfiles for my Manjaro Linux setup using the Gruvbox theme.
 ![Screenshot](/screenshots/firefox-27.03.20.jpg)
 
 ### Spotify
-![Screenshot](/screenshots/spotify-27.0.3.20.jpg)
+![Screenshot](/screenshots/spotify-27.03.20.jpg)
 
 ### urxvt
-![Screenshot](/screenshots/urxvt-27.0.3.20.jpg)
+![Screenshot](/screenshots/urxvt-27.03.20.jpg)
 
 ## Applications
 - `firefox`: Web browser
