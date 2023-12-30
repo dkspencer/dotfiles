@@ -1,0 +1,80 @@
+@import "themes/nord.css";
+
+* {
+    border: none;
+    border-radius: 3px;
+    min-height: 0;
+    /* margin: 0.2em 0.3em 0.2em 0.3em; */
+    color: @text;
+}
+
+window#waybar {
+    /* you can also GTK3 CSS functions! */
+    background-color: @base;
+    /* background-color: shade(@base, 0.9); */
+    /* border: 2px solid alpha(@crust, 0.3); */
+    border-radius: 10px;
+    /* margin: 100; */
+  }
+
+#waybar {
+    /* background: @bg; */
+    font-family: "Fira Code", "Font Awesome 5 Pro";
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.custom-spotify,
+#bluetooth,
+#clock,
+#clock.date,
+#pulseaudio,
+#pulseaudio.microphone,
+#cpu,
+#disk,
+#memory,
+#temperature {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#pulseaudio {
+    color: @purple;
+}
+
+#pulseaudio.microphone {
+    color: @green;
+}
+
+#bluetooth {
+    color: @yellow;
+    padding-bottom: 0.21em;
+}
+
+#clock {
+    color: @orange;
+}
+
+#clock.date {
+    color: @red;
+}
+
+
+
+#pulseaudio.muted {
+    color: @red;
+}
+
+#pulseaudio.source-muted {
+    color: #D08770;
+}
+
+.custom-spotify {
+    color: @green;
+}
+
+#tray {
+    opacity: 0;
+}
