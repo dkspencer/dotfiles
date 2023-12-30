@@ -2,33 +2,11 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-<<<<<<< HEAD
-export ZSH="/home/danielle/.oh-my-zsh"
-# export TERM='linux'
-export PATH="/home/danielle/.ebcli-virtual-env/executables:$PATH"
-export EDITOR="nvim"
-#POWERLEVEL9K_MODE='DejaVu Sans Mono'
-=======
 export ZSH="$HOME/.oh-my-zsh"
->>>>>>> 8112d56 (zsh config)
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-<<<<<<< HEAD
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
-#ZSH_THEME="powerlevel9k/powerlevel9k"
-
-PROMPT=''
-
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(virtualenv dir vcs)
-# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-=======
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
@@ -37,7 +15,6 @@ PROMPT=''
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
->>>>>>> 8112d56 (zsh config)
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -48,19 +25,6 @@ PROMPT=''
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
-<<<<<<< HEAD
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS=true
-=======
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
@@ -71,7 +35,6 @@ PROMPT=''
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
->>>>>>> 8112d56 (zsh config)
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
