@@ -16,7 +16,7 @@ margin=10
 padding=20
 
 max-icon-size=48
-default-timeout=100000
+default-timeout=5000
 anchor=top-right
 
 [urgency=low]
