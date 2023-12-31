@@ -129,3 +129,5 @@ fpath+=~/.zfunc
 export PATH="$PATH:/home/danielle/.local/bin"
 
 export PYTHONPATH="${PYTHONPATH}:~/cytora/risk-stream-service"
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
