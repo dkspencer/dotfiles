@@ -10,7 +10,7 @@
 window {
 	background-color: @base;
 
-	border-image: rgba(eceff4ee) rgba(88c0d0ee) 45deg;
+	border-color: @green;
 	border-width: 2px;
 	border-style: solid;
     border-radius: 10px;

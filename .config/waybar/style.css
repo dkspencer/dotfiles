@@ -9,16 +9,11 @@
 }
 
 window#waybar {
-    /* you can also GTK3 CSS functions! */
     background-color: @base;
-    /* background-color: shade(@base, 0.9); */
-    /* border: 2px solid alpha(@crust, 0.3); */
     border-radius: 10px;
-    /* margin: 100; */
   }
 
 #waybar {
-    /* background: @bg; */
     font-family: "Fira Code", "Font Awesome 5 Pro";
     font-size: 15px;
     font-weight: bold;
@@ -60,8 +55,6 @@ window#waybar {
 #clock.date {
     color: @red;
 }
-
-
 
 #pulseaudio.muted {
     color: @red;
