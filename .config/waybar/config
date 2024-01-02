@@ -35,15 +35,15 @@
         "interval": 30,
         "format": "",
         "format-disabled": "",
-        "format-connected": " {num_connections}",
-        "tooltip-format": " {device_alias}",
+        "format-connected": "{num_connections} ",
+        "tooltip-format": "{device_alias} ",
         "tooltip-format-connected": "{device_enumerate}",
-        "tooltip-format-enumerate-connected": " {device_alias}",
+        "tooltip-format-enumerate-connected": "{device_alias} ",
         "on-click": "blueman-manager"
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
-        "format-muted": " {format_source}",
+        "format-muted": "{format_source} ",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -63,8 +63,10 @@
     },
     "pulseaudio#microphone": {
         "format": "{format_source}",
-        "format-source": "{volume}%  ",
-        "format-source-muted": ""
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "on-scroll-up": "",
+        "on-scroll-down": ""
       },
     "custom/spotify": {
         "exec": "/usr/bin/python3 /home/danielle/.config/waybar/custom_modules/spotify.py --player spotify",

@@ -4,7 +4,6 @@
     border: none;
     border-radius: 3px;
     min-height: 0;
-    /* margin: 0.2em 0.3em 0.2em 0.3em; */
     color: @text;
 }
 
@@ -45,7 +44,6 @@ window#waybar {
 
 #bluetooth {
     color: @yellow;
-    padding-bottom: 0.21em;
 }
 
 #clock {
@@ -61,7 +59,7 @@ window#waybar {
 }
 
 #pulseaudio.source-muted {
-    color: #D08770;
+    color: @red;
 }
 
 .custom-spotify {
