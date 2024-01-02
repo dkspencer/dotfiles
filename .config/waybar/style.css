@@ -1,0 +1,71 @@
+@import "/home/danielle/.config/_themes/nord.css";
+
+* {
+    border: none;
+    border-radius: 3px;
+    min-height: 0;
+    color: @text;
+}
+
+window#waybar {
+    background-color: @base;
+    border-radius: 10px;
+  }
+
+#waybar {
+    font-family: "Fira Code", "Font Awesome 5 Pro";
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.custom-spotify,
+#bluetooth,
+#clock,
+#clock.date,
+#pulseaudio,
+#pulseaudio.microphone,
+#cpu,
+#disk,
+#memory,
+#temperature {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#pulseaudio {
+    color: @purple;
+}
+
+#pulseaudio.microphone {
+    color: @green;
+}
+
+#bluetooth {
+    color: @yellow;
+}
+
+#clock {
+    color: @orange;
+}
+
+#clock.date {
+    color: @red;
+}
+
+#pulseaudio.muted {
+    color: @red;
+}
+
+#pulseaudio.source-muted {
+    color: @red;
+}
+
+.custom-spotify {
+    color: @green;
+}
+
+#tray {
+    opacity: 0;
+}
