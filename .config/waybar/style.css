@@ -5,21 +5,23 @@
     border-radius: 3px;
     min-height: 0;
     color: @text;
+
+    font-family: "Fira Code", "Font Awesome 5 Pro";
+    font-size: 15px;
+    font-weight: bold;
 }
 
 window#waybar {
     background-color: @base;
     border-radius: 10px;
-  }
+}
 
 #waybar {
-    font-family: "Fira Code", "Font Awesome 5 Pro";
-    font-size: 15px;
-    font-weight: bold;
     opacity: 0.9;
     border-radius: 10px;
 }
 
+#workspaces,
 .custom-spotify,
 #bluetooth,
 #clock,
@@ -29,9 +31,32 @@ window#waybar {
 #cpu,
 #disk,
 #memory,
+tooltip,
 #temperature {
     padding-left: 1em;
     padding-right: 1em;
+}
+
+#workspaces button {
+    color: @text;
+    margin-top: 5px;
+    min-width: 30px;
+    border-bottom: 3px solid @frost_4;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    border-bottom: 3px solid @green;
+   
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    border-bottom: 3px solid @green;
+}
+
+#workspaces button.urgent {
+    border-bottom: 3px solid @red;
 }
 
 #pulseaudio {
