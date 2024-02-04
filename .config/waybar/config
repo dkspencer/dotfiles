@@ -6,10 +6,7 @@
     "margin-top": 10,
     "margin-bottom": 5,
     "modules-left": [
-        "cpu",
-        "temperature",
-        "memory",
-        "disk",
+        "hyprland/workspaces",
         "tray"
     ],
     "modules-center": [
@@ -17,11 +14,26 @@
     ],
     "modules-right": [
         "pulseaudio",
-        "pulseaudio#microphone",
         "bluetooth",
         "clock",
         "clock#date"
     ],
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "default": "1"
+        },
+        "on-click": "activate"
+    },
     "tray": {
         "spacing": 10
     },
@@ -36,9 +48,6 @@
         "format": "",
         "format-disabled": "",
         "format-connected": "{num_connections} ",
-        "tooltip-format": "{device_alias} ",
-        "tooltip-format-connected": "{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias} ",
         "on-click": "blueman-manager"
     },
     "pulseaudio": {
@@ -67,7 +76,7 @@
         "format-source-muted": "",
         "on-scroll-up": "",
         "on-scroll-down": ""
-      },
+    },
     "custom/spotify": {
         "exec": "/usr/bin/python3 /home/danielle/.config/waybar/custom_modules/spotify.py --player spotify",
         "format": "{}",
@@ -114,7 +123,9 @@
         "critical-threshold": 70,
         "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["󰈸"],
+        "format-icons": [
+            "󰈸"
+        ],
         "on-click-right": "corectrl"
-      },
+    },
 }
